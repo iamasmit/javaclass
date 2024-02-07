@@ -6,6 +6,16 @@ public class Account {
     public double balance;
     public static String bank;
 
+    public Account(){
+
+    }
+    public Account(long acc_no, String name, double balance){
+        this.acc_no = acc_no;
+        this.name = name;
+        this.balance = balance;
+
+    }
+
     public void deposit(double amount){
         balance += amount;
         System.out.println("Amount deposited " +amount);

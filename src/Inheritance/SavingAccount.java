@@ -4,6 +4,17 @@ public class SavingAccount  extends Account{
     //SavingsAccount is a Account
     double min_balance;
     double interest_rate; //
+
+    public SavingAccount(){
+
+    }
+    public SavingAccount(long acc_no, String name, double balance, double min_balance, double interest_rate){
+
+        super(acc_no, name, balance);
+        this.min_balance = min_balance;
+        this.interest_rate = interest_rate;
+    }
+
     public void displaySavingsAccount(){
         showAccountDetail();
         System.out.println("Annual Interest Rate : "+ interest_rate);
